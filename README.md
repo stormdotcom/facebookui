@@ -1,5 +1,5 @@
 # facebookui
 
-facebook ui using html, css and google fonts
+--facebook ui using html, css and google fonts
 
-!   just a static websites
+!just a static websites
