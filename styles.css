@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+.header_left img{
+    height: 40px;
+}
+.header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+.header_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header_input {
+    display: flex;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 999px;
+
+
+}
+.header_input input {
+    border: none;
+    background-color: transparent;
+}
+.header_middle {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.header_options .material-icons {
+    font-size: xx-large;
+    color: gray
+}
+.header_options:hover  .material-icons{
+    color: rgb(106, 106, 236)
+}
+.header_options {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+.header_options:active  .material-icons{
+    color: rgb(128, 128, 253)
+}
+.header_options:active  {
+    border-bottom: 4px solid rgb(128, 128, 253)
+}
+.header_options:hover  {
+    background-color: 4px solid rgb(128, 128, 253);
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: none;
+
+}
+.header_info {
+    display: flex;
+    align-items: center;
+
+}
+.header_info h4 {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.header_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+.header_right .material-icons {
+    color: gray;
+    margin:0 10px;
+    cursor: pointer;
+}
+
+
+/* Sidebar */
+.sidebarRow {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.sidebarRow:hover {
+    background-color: lightgrey;
+    border-radius: 10px;
+    
+}
+.sidebarRow h4 {
+    margin-left: 20px;
+    font-weight: 600;
+}
+.sidebarRow .material-icons {
+    font-size: xx-large;
+    color: #4267B2;
+}
+.story {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 200px;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+}
+.story:hover {
+    transform: scale(1.05);
+}
+.user_avatar{
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%
+}
+.story_avatar {
+    margin: 10px;
+}
+.story h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+.storyReel {
+    padding: 10px 0;
+    display: flex;
+}
+.main_body {
+    display: flex;
+}
+body {
+    background-color: #f1f2f5;
+}
+.feed{
+    flex: 1;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sidebar {
+    padding: 25px 10px;
+    flex: 0.33;
+}
+
+/* Message Sender */
+.messageSender {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+    width: 100%;
+}
+
+.messageSender_top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eff2f5;
+    padding: 15px; 
+}
+.messageSender_top form input{
+    flex: 1;
+    outline-width: 0;
+    border: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 999px;
+    background-color: #eff2f5;
+}
+.messageSender_bottom {
+     display: flex;
+     justify-content: space-evenly;
+}
+.messageSender_option {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin: 5px;
+}
+.messageSender_option h3{
+    font-size: medium;
+    margin-left: 10px;
+    background-color: #eff2f5;
+    border-radius: 20px;
+}
+
+/* Posts */
+.post {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+}
+.post_image img{
+     width: 100%;
+}
+.post_top {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 15px;
+}
+.post_avatar {
+    margin-left: 10px;
+    padding-top: 10px;
+
+}
+.post_topInfo h3 {
+    font-size: medium;
+}
+.post_topInfo p {
+    font-size: small;
+    color: gray;
+}
+.post_bottom {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    padding: 15px 25px;
+}
+.post_options {
+    padding-top: 10px;
+    border-top: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+    color: grey;
+    cursor: pointer;
+    padding: 15px;
+}
+.post__option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex: 1;
+  }
+  .post__option p {
+    margin-left: 10px;
+  }
+
+  .post__options:hover {
+    background-color: #4f99df;
+    border-radius: 10px;
+  }
+/* house no 11
+vattapara road netaji 1st road */
